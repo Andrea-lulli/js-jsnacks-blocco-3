@@ -10,11 +10,13 @@ let numeri = [""]
 
 let som = 0
 
-for (let i = 0; i < numeri.length; i++) {
+let i = 0
+
+while (i < numeri.length) {
 
     let richiestaNumeri = parseInt(prompt("Inseirisci Numero"));
     som = som + richiestaNumeri
-
+    
 
     if (som <= 50) {
         numeri.push(richiestaNumeri)
@@ -23,5 +25,22 @@ for (let i = 0; i < numeri.length; i++) {
     } else {
         console.log("limite raggiunto");
     }
+
+i++    
 }
+
+// for (let i = 0; i < numeri.length; i++) {
+
+//     let richiestaNumeri = parseInt(prompt("Inseirisci Numero"));
+//     som = som + richiestaNumeri
+    
+
+//     if (som <= 50) {
+//         numeri.push(richiestaNumeri)
+//         console.log(som);
+//         console.log(numeri);
+//     } else {
+//         console.log("limite raggiunto");
+//     }
+// }
 
