@@ -8,13 +8,20 @@
 
 let numeri = [""]
 
- for (let i = 0; i < numeri.length ; i++) {
+let som = 0
+
+for (let i = 0; i < numeri.length; i++) {
 
     let richiestaNumeri = parseInt(prompt("Inseirisci Numero"));
-    numeri.push(richiestaNumeri)  
-        console.log(numeri);
-    if (numeri[i] <= 50 ) {
-        console.log("basta");
-    }
+    som = som + richiestaNumeri
 
+
+    if (som <= 50) {
+        numeri.push(richiestaNumeri)
+        console.log(som);
+        console.log(numeri);
+    } else {
+        console.log("limite raggiunto");
+    }
 }
+
