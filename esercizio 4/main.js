@@ -15,10 +15,9 @@ let listaInvitati = document.getElementById("stampa")
 
 let richiesta = prompt("inserisci nome")
 
+let i = 0
 
-for (let i = 0; i < nomeInvitati.length; i++) {
-
-
+while (i < nomeInvitati.length) {
 
     if (richiesta == nomeInvitati[i]) {
 
@@ -30,5 +29,23 @@ for (let i = 0; i < nomeInvitati.length; i++) {
 
     }
 
+    i++
 }
+
+
+// for (let i = 0; i < nomeInvitati.length; i++) {
+
+
+
+//     if (richiesta == nomeInvitati[i]) {
+
+//         stampa.innerHTML = "nome in lista";
+//         break;
+
+//     } else if (richiesta != nomeInvitati[i]) {
+//         stampa.innerHTML = "non puo partecipare alla festa";
+
+//     }
+
+// }
 
