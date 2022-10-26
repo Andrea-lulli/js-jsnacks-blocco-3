@@ -9,14 +9,40 @@ let stampa = document.getElementById("stampa")
 
 let numero = parseInt(prompt("inserisci numero"))
 
-for (let i = 0; i < numero; i++) {
+let i = 0
+
+while (i < numero) {
 
     let array = [i]
 
-    for (let i = 0; i < 10; i++) {
-        array = Math.floor(Math.random() * 10)
-        
+    let x = 0
+
+    while (x < 10) {
+
+        array = Math.floor(Math.random() * 100)
+
         stampa.innerHTML += array
-        
-    }
+        console.log(array);
+
+        x++    
+        }
+i++    
 }
+
+
+
+
+
+
+// for (let i = 0; i < numero; i++) {
+
+//     let array = [i]
+
+//     for (let x = 0; x < 10; x++) {
+//         array = Math.floor(Math.random() * 100)
+
+//         stampa.innerHTML += array
+//         console.log(array);
+//     }
+    
+// }
