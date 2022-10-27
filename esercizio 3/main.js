@@ -13,19 +13,20 @@ let i = 0
 
 while (i < numero) {
 
-    let array = [i]
+    let array = []
 
     let x = 0
 
     while (x < 10) {
 
-        array = Math.floor(Math.random() * 100)
-
-        stampa.innerHTML += array
-        console.log(array);
+       let numberRandom = Math.floor(Math.random() * 100)
+        array.push(numberRandom)
+        
 
         x++    
         }
+        stampa.innerHTML += array
+        console.log(array);
 i++    
 }
 
